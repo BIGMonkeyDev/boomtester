@@ -19,9 +19,11 @@
 
     // assets
     import Prime_LOGO from "$lib/assets/banner.png";
+    import Prime_LOGO2 from "$lib/assets/stamp.png";
     import BUY_LOGO from "$lib/assets/buy.png";
     import CHART_LOGO from "$lib/assets/chart.png";
     import MERCH_LOGO from "$lib/assets/merch.png";
+    import FOUNTAIN_LOGO from "$lib/assets/fountain.png";
     import CONNECT_LOGO from "$lib/assets/connect.png";
     import DISCONNECT_LOGO from "$lib/assets/disconnect.png";
 
@@ -118,7 +120,12 @@ for example <img src="{CONNECT_LOGO}" alt="Connect Logo" class="mx-auto h-15 w-a
             <a href=" https://dexscreener.com/pulsechain/0xd3cc40772454a1eeadd36a69e31067646c04b0cb " class="block text-s text-white hover:underline">
                 <img src="{CHART_LOGO}" alt="Chart Logo" class="mx-auto h-20 w-auto mb-2" />  
             </a>
-        </div>       
+        </div>   
+        <div class="border-2 border-[#ff66c4] bg-[#000000a3] w-full md:w-44 rounded">
+            <a href=" https://dexscreener.com/pulsechain/0xd3cc40772454a1eeadd36a69e31067646c04b0cb " class="block text-s text-white hover:underline">
+                <img src="{FOUNTAIN_LOGO}" alt="Fountain Logo" class="mx-auto h-20 w-auto mb-2" />  
+            </a>
+        </div> 
         <div class="border-2 border-[#ff66c4] bg-[#000000a3] w-full md:w-44 rounded">
             {#if !$connected}
                 <button on:click={() => connectModalOpen = true} class="block text-s text-white hover:underline">
@@ -184,7 +191,9 @@ for example <img src="{CONNECT_LOGO}" alt="Connect Logo" class="mx-auto h-15 w-a
 {/if}
 
 <footer class="p-4 text-center mb-8 bg-transparent-800 text-[white]">
-    
+    <div class="mb-8 text-center">
+        <img src="{Prime_LOGO2}" class="mx-auto h-15 mb-2" alt="Prime_LOGO2" />   
+    </div>
     <div class="mx-auto flex items-center justify-center">
         <a href="https://twitter.com/PrimeApe_Pulse" target="_blank" class="mx-2">
             <img src={TWITTER_ICON} class="w-16 inline" alt="Follow on Twitter" />
